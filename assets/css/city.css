@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'hurtmold_regular';
+    src: url('fonts/hurtm___-webfont.woff2') format('woff2'),
+    url('fonts/hurtm___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+
+    font-family:"Josefin Sans", sans-serif;
+    font-size:100%;
+    height:100%;
+    line-height:1.45;
+}
+
+
+.parallax-container {
+    height: 685px;
+}
+
+#citypage1 {
+    height: 600px;
+    z-index: 10;
+
+}
+
+#scrollNote {
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    top: 90vh;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(31, 31, 31, 0.60);
+}
+
+.scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    width :34px;
+    height: 55px;
+}
+.mousey {
+    width: .3vh;
+    padding: 10px 15px;
+    height: 4.5vh;
+    border: 2px solid #fafafa;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fafafa;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+    background-color: rgba(250, 250, 250, 0.7);
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+
+nav {
+    color: #fff;
+    font-family:hurtmold_regular;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 6vh;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    position: fixed;
+    z-index: 5;
+    left:0;
+    background-color: rgba(0, 180, 180, 0.45);
+
+}
+
+#navList {
+    right:10vh;
+}
+
+.sidenav {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: rgba(222, 222, 222, 0.45);
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+#cityDataPanel1 {
+    margin-top: 10vh;
+    border-style: dashed;
+    border-width: 1px;
+    height:80vh;
+    z-index: 100;
+    background-color: rgba(31, 31, 31, 0.6);
+    color:white;
+
+}
+
+#cityDataPanel2 {
+    margin-top: 10vh;
+    border-style: dashed;
+    border-width: 1px;
+    height:80vh;
+
+}
+
+#cityDataPanel3 {
+    margin-bottom: 60vh;
+    border-style: dashed;
+    border-width: 1px;
+
+}
+
+#cityDataPanel4{
+    margin-bottom: 20vh;
+    border-style: dashed;
+    border-width: 1px;
+    height:80vh;
+    top:10px;
+}
+
+
+
+#weather {
+    /*margin-top:0;*/
+    border-style: dashed;
+    border-width: 1px;
+    height: 25vh;
+    /*!*width: 90vh;*!*/
+    background-color: rgba(0, 180, 180, 0.4);
+
+
+    margin-top: 9.9vh;
+    left:0;
+    color:white;
+}
+
+#maps {
+    margin-top:0;
+    border-style: dashed;
+    border-width: 1px;
+    height: 50vh;
+    /*width: 90vh;*/
+    background-color: rgba(31, 31, 31, 0.4);
+    color:white;
+
+}
+
+
+#instafeed {
+    top:10vh;
+    height: 1075px;
+    position: relative;
+    /*background-image: url("/assets/images/southbeachbr.jpg");*/
+    background-repeat: repeat;
+
+
+}
+
+#nycbackground {
+
+    margin: 0 0 0 0;
+    background:100%;
+    width:100%;
+    height:120%;
+
+
+}
+
+#nycbackground1 {
+    margin: 0 0 0 0;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+
+h1 {
+    color:white;
+    font-family:hurtmold_regular;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 6vh;
+    margin: 0 0 0 0;
+    font-weight: bold;
+    text-shadow: 0 0 5px #1f1f1f;
+    background-color: rgba(31, 31, 31, 0.5);
+    height:8vh;
+    padding-top: 10px;
+    width:100%;
+}
+h2 {
+    color:white;
+    font-family:sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 2.5vh;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    text-shadow: 0 0 5px #1f1f1f;
+    background-color: rgba(31, 31, 31, 0.5);
+    height:8vh;
+    padding-top: 10px;
+    width:100%;
+}
+#gramHead {
+    top:50vh;
+}
+gramHead1 {
+    top:30vh;
+}
+
+
+.btn {
+    color:black;
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: #00b4b4;
+    border-width: 2px;
+}
