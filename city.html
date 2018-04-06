@@ -6,15 +6,18 @@
     <meta charset="UTF-8">
     <title>CityHop</title>
 
+    <!-- Reference to external CSS Reset Stylesheet -->
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Reference to external CSS Reset Stylesheet -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen,projection">
     <!-- Reference to external CSS Stylesheet -->
     <link rel="stylesheet" href="assets/css/city.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-b8rIC0nONATt56H52WbPaU1TsMB3Gng"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -23,22 +26,52 @@
 
 <body>
 
-<div class="row parallax-container">
+
+
+<div id="cityPage1" class="row parallax-container">
+
+    <img id="nycbackground1" class="parallax center" src="assets/images/nycbr.jpg">
     <div class="col s12 m12 l12 center">
         <nav>
-            <div class="nav-wrapper ">
+            <div class="row nav-wrapper">
+                <div id="nameDisplay" class="col s6 m6 l6 center">test</div>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down ">
-                    <li><a href="index.html">Explore</a></li>
-                    <li><a href="index.html">About</a></li>
-                </ul>
+                <div id="navList" class="col s6 m6 l6 center">
+                    <ul  class="right hide-on-med-and-down ">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#instafeed">Explore</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Explore</a></li>
-            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#instafeed">Explore</a></li>
         </ul>
+    </div>
+
+    <div id="cityDataPanel2" class=" col s6 m6 l6 center">
+
+        <div id="buttons-view">
+            <button class='btn btn-primary' id="atl">Atlanta</button>
+            <button class='btn btn-primary' id="mia">Miami</button>
+            <button class='btn btn-primary' id="nyc">New York</button>
+            <button class='btn btn-primary' id="chg">Chicago</button>
+            <button class='btn btn-primary' id="los">Los Angeles</button>
+            <br> <br>
+            <div id="hops"></div>
+        </div>
+
+
+        <div >
+            <div id="maps" class="center">
+
+                Map API Data
+
+            </div>
+        </div>
+
     </div>
 
     <div id="cityDataPanel1" class=" col s6 m6 l6 center">
@@ -46,24 +79,27 @@
 
         <div id="city-data1" class="center">
 
-            API Data 1
+            <table class="table" id="places">
 
-        </div>
+                <!--Table Head-->
+                <thead>
+                <tr>
+                    <th>Hopped On</th>
+                    <th>City</th>
+                    <th>Waether Condition</th>
+                    <th>Temperature</th>
+                    <th>Hop Time</th>
+
+                </tr>
+                </thead>
+
+                <!--Table Body-->
+                <tbody id="current-emp">
 
 
-    </div>
+                </tbody>
 
-    <div id="cityDataPanel2" class=" col s6 m6 l6 center">
-
-
-        <div id="city-data2" class="center">
-
-            API Data
-
-        </div>
-        <div id="city-data3" class="center">
-
-            API Data 2
+            </table>
 
         </div>
 
@@ -73,22 +109,11 @@
 </div>
 
 
-<div id="cityDataPanel4" class="row parallax-container center">
-
-
-    <div id="city-data4" class="parallax col s12 m12 l12 center">
-
-        API Data 4
-
-    </div>
-
-
-
-</div>
 
 <!--Note to inform user to scroll -->
 <div class="row">
-    <div id="scrollNote" class="col s12 m12 l12">
+
+    <div id="scrollNote" class="col s12 m12 l12 center">
 
         <div class="scroll-downs">
             <div class="mousey">
@@ -97,14 +122,32 @@
         </div>
 
     </div>
+
+</div>
+
+<div id="weather" class = "parallax-container center">
+    Weather API Data
 </div>
 
 
+<div id="gram" class="parallax-container">
+    <h1 id="gramHead" class="center">Explore the Possibilities</h1>
+    <h2 id="gramHead1" class="center">Browse our exclusive insider selection.</h2>
+    <img id="nycbackground" class="parallax center" src="assets/images/nycbr.jpg">
+    <div id = "instafeed" class="parallax-container center"></div>
+</div>
 
+<script>
+
+</script>
+
+
+<script src="https://matthewelsom.com/assets/js/libs/instafeed.min.js"></script>
 <!-- Added link to the jQuery Library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--JavaScript at end of body for optimized loading-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 <!-- Reference to external JavaScript File -->
 <script src="assets/javascript/logic.js"></script>
 

@@ -15,6 +15,9 @@
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" media="screen,projection">
     <!-- Reference to external CSS Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -33,14 +36,14 @@
             <div class="nav-wrapper ">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down ">
-                    <li><a href="index.html">Explore</a></li>
-                    <li><a href="index.html">About</a></li>
+                    <li><a href="#homePage2">Explore</a>
+                    <li><a name="name_of_target">About</a></li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">Explore</a></li>
+            <li><a href="#homePage2">Explore</a></li>
             <li><a href="index.html">About</a></li>
         </ul>
 
@@ -62,8 +65,6 @@
                             <source type="video/mp4" src="assets/videos/cityHop.mp4"></source>
                         </video>
                         <div id="state" class="visible-desktop"><span class="fa fa-pause"></span></div>
-
-
 
                     </div>
                 </div>
@@ -87,7 +88,8 @@
             <div class="row">
                 <div id="txt" class="col s12 m12 l12">
                     <!--Home Page 2 Content-->
-                    <div id="homePage2" class="parallax section">
+                    <div id="homePage2" class="parallax-container section">
+
                         <p>Cookie cotton candy powder. Unerdwear.com sweet cake. Powder jujubes marshmallow marzipan. Jelly jelly-o sweet apple pie brownie apple pie. Bonbon sweet roll carrot cake tart gummi bears drag&eacute;e sweet. Marshmallow candy powder. Applicake danish apple pie marzipan cheesecake icing macaroon sweet biscuit. Sesame snaps jelly-o pie cheesecake tootsie roll chocolate cake souffl&eacute; cotton candy. Sweet roll brownie applicake. Sweet roll apple pie sesame snaps biscuit bear claw sweet roll chocolate bar. Tart sweet roll unerdwear.com pie cake brownie carrot cake. Tootsie roll lollipop marshmallow.</p>
 
                         <p>Jelly-o lollipop pie bear claw powder macaroon lollipop lemon drops. Topping jujubes jujubes sesame snaps fruitcake biscuit chocolate jelly beans. Cookie dessert gingerbread. Pudding sweet applicake. Wafer sweet roll marshmallow toffee jelly halvah. Drag&eacute;e lemon drops oat cake tart halvah jujubes jelly biscuit. Pie wafer wafer jelly-o jelly gummies sugar plum pudding. Topping oat cake bear claw danish cookie brownie. Jelly beans tootsie roll gingerbread pastry cookie liquorice applicake. Gummi bears biscuit icing toffee chocolate cake. Powder cheesecake drag&eacute;e brownie applicake lollipop. Jelly beans gingerbread unerdwear.com chocolate bar cake. Chocolate cake caramels dessert sweet topping icing gingerbread sesame snaps marzipan.</p>
@@ -118,11 +120,11 @@
 
 
 
-
 </div> <!--End container-->
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 <!-- Added link to the jQuery Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--JavaScript at end of body for optimized loading-->
