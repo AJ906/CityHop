@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CityHop Adventure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
+
+  <!--Import bootstrap.css-->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<style>
+  body {
+    font-family: 'Josefin Slab', serif;
+    background-color:rgba(31, 31, 31, 0.45);
+    color: white;
+    /* font-size: 75px; */
+  }
+  .container{
+    width: auto;
+    margin: auto;
+  }
+
+  .ch-nav-title {
+    font-size: 100px;
+    margin-left: auto;
+  }
+
+  nav {
+    color: white;
+    background-color:rgba(31, 31, 31, 0.45);
+    padding-left: 20px;
+  }
+
+  #cities-title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20x;
+  }
+
+  .city-info{
+    padding-top: 20px;
+
+  }
+
+  .row {
+    /* justify-content:space-around; */
+    /* font-weight: bold; */
+  }
+
+  #outdoor-graphics {
+    /* float: left; */
+  }
+
+  img {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 10px;
+    /* margin-left: 10px; */
+  }
+
+  #outdoorInfo {
+    /* background: rgb(71, 71, 71); */
+    /* margin-top: 20px; */
+  }
+
+  #outdoor-text {
+    height: 200px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+</style>
+
+  <div class="container">
+
+<!--       
+              Collect the nav links, forms, and other content for toggling
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              </div>
+          </div>
+      </nav> -->
+    
+    <nav>
+        <div class="nav-wrapper">
+            <!-- <a href="#!" class="brand-logo left" id#"ch-nav-title">CityHop</a> -->
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">CityHop Home</a></li>
+                <li><a href="about.php">Explore</a></li>
+                <li><a href="#portfolio">City</a></li>
+                <!-- <li><a href="#">Blog</a></li>
+                <li><a href="contact.php">Contact</a></li> -->
+            </ul>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown" data-beloworigin="true">Pick Your City<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            </ul>
+        </div>
+      </nav>
+    
+    <div class="col s12" id="cities-title">Choose Your Adventure</div>
+
+
+  <div class="row" id="outdoorInfo">
+      <div class="col s2"><span class="flow-text">
+        <h3>Outdoor</h3>
+        <p>Beaches, Parks, Gardens</p></span>     
+      </div>
+
+      <div class="col s10"><span class="flow-text">
+        <img src="assets/images/Atlanta/AtlantaBotanicalGarden.jpg"
+        class="auth-image" alt="Atl-BotanicalGarden">        
+
+        <img src="assets/images/Chicago/GrantParkandBuckinghamFountain.jpg"
+        class="auth-image" alt="Chi-GrantPark">
+
+        <img src="assets/images/LosAngeles/SantaMonicaPier.jpg"
+        class="auth-image" alt="LA-SantaMonica">
+
+        <img src="assets/images/Miami/SouthBeach.jpg"
+        class="auth-image" alt="Miami-SouthBeach"></span>
+      </div>
+    </div>
+
+    <div class="row" id="artsEntInfo">
+      <div class="col s10"><span class="flow-text">
+        <img src="assets/images/NewYork/Broadway.jpg"
+        class="auth-image" alt="NY-Broadway">
+
+        <img src="assets/images/LosAngeles/HollywoodBowl.jpg"
+        class="auth-image" alt="LA-HollywoodBowl">
+
+        <img src="assets/images/Atlanta/FoxTheatre.jpg"
+        class="auth-image" alt="Fox-Theatre">
+
+        <img src="assets/images/Chicago/ArtInstituteofChicago.jpg"
+        class="auth-image" alt="Chi-ArtInstitute"></span>
+      </div>
+
+  
+      <div class="col s2"><span class="flow-text">
+          <h3>Arts and Entertainment</h3>
+          <p>Concerts, Plays, Paintings</p>
+      </span></div>
+    </div>
+
+    <div class="row" id="sportsInfo">
+        <div class="col s2"><span class="flow-text">
+          <h3>Sports</h3>
+          <p>Stadiums, Arenas, Fields</p></span>     
+        </div>
+  
+        <div class="col s10"><span class="flow-text">
+          <img src="assets/images/Chicago/WrigleyField.jpg"
+          class="auth-image" alt="Atl-SunTrust_Park">        
+  
+          <img src="assets/images/Atlanta/SuntrustPark.jpg"
+          class="auth-image" alt="Atl-SunTrust_Park">
+  
+          <img src="assets/images/LosAngeles/SantaMonicaPier.jpg"
+          class="auth-image" alt="LA-SantaMonica">
+  
+          <img src="assets/images/Miami/SouthBeach.jpg"
+          class="auth-image" alt="Miami-SouthBeach"></span>
+        </div>
+      </div>
+
+      <div class="row" id="musAndMomInfo">
+          <div class="col s10"><span class="flow-text">
+            <img src="assets/images/Atlanta/MLKJrNatSite.jpg"
+            class="auth-image" alt="Atl-MLKNationlHistoricSite">
+    
+            <img src="assets/images/Atlanta/HighMuseumofArt.jpg"
+            class="auth-image" alt="Atl-HighMuseum">
+    
+            <img src="assets/images/Atlanta/OaklandCemetery.jpg"
+            class="auth-image" alt="Atl-OaklandCemetery">
+    
+            <img src="assets/images/NewYork/AmericanMuseumofNaturalHistory.jpg"
+            class="auth-image" alt="NY-AmericanMuseumofNaturalHistory"></span>
+          </div>
+    
+      
+          <div class="col s2"><span class="flow-text">
+              <h3>Museums and Monuments</h3>
+              <p>Arts, History, Cemeteries</p></span>
+          </div>
+      </div>
+
+    <div class="row" id="zandAInfo">
+        <div class="col s2"><span class="flow-text">
+          <h3>Zoos and Aquariums</h3>
+          <p>Lions and Tigers and... Whales?</p></span>     
+        </div>
+  
+        <div class="col s10"><span class="flow-text">
+          <img src="assets/images/Atlanta/AtlantaBotanicalGarden.jpg"
+          class="auth-image" alt="Atl-BotanicalGarden">        
+  
+          <img src="assets/images/Chicago/GrantParkandBuckinghamFountain.jpg"
+          class="auth-image" alt="Chi-GrantPark">
+  
+          <img src="assets/images/LosAngeles/SantaMonicaPier.jpg"
+          class="auth-image" alt="LA-SantaMonica">
+  
+          <img src="assets/images/Miami/SouthBeach.jpg"
+          class="auth-image" alt="Miami-SouthBeach"></span>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+</body>
+</html>
