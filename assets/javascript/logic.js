@@ -227,8 +227,8 @@ $(document).on("click", ".btn-info", function()
         map: map
     });
     // Here we are building the URL we need to query the database
-    var queryURL = "http://dataservice.accuweather.com/locations/v1/cities/geoposition/search.json?q="+blat + "," + blng +
-        "&apikey=7bojNmSIKHOhVFv54Ep6cUWOj4h3mfof";
+    var queryURL = "https://dataservice.accuweather.com/locations/v1/cities/geoposition/search.json?q="+blat + "," + blng +
+        "&apikey=UTyEmUNTR7FmVptMCKS7CHHAdSeoDnQR";
     var conditionURL;
     var key;
 
@@ -249,8 +249,8 @@ $(document).on("click", ".btn-info", function()
             console.log(response.Key);
             key = response.Key;
 
-            conditionURL = "http://dataservice.accuweather.com/currentconditions/v1/" + key +
-                "?apikey=7bojNmSIKHOhVFv54Ep6cUWOj4h3mfof&details=1";
+            conditionURL = "https://dataservice.accuweather.com/currentconditions/v1/" + key +
+                "?apikey=UTyEmUNTR7FmVptMCKS7CHHAdSeoDnQR&details=1";
 
             // Nested ajax
             $.ajax({
