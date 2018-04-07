@@ -1,12 +1,12 @@
-(function($) {
-    $(function() {
- 
-      $('.button-collapse').sideNav();
-      $('select').material_select();
-      $('.dropdown-button').dropdown();
- 
-    }); // end of document ready
-  })(jQuery); // end of jQuery name space
+// (function($) {
+//     $(function() {
+//
+//       $('.button-collapse').sideNav();
+//       $('select').material_select();
+//       $('.dropdown-button').dropdown();
+//
+//     }); // end of document ready
+//   })(jQuery); // end of jQuery name space
 
 
 var config = {
@@ -304,9 +304,17 @@ dataRef.ref().on("child_added", function(childSnapshot) {
 
 
 $(document).ready(function(){
+    // $(function() {
+    //
+    //     $('.button-collapse').sideNav();
+    //     $('select').material_select();
+    //     $('.dropdown-button').dropdown();
+    //
+    // }); // end of document ready
     $('.sidenav').sidenav();
 
 });
+
 
 // Token Refresh URL
 // https://api.instagram.com/oauth/authorize/?client_id=69836a1b3e934354894e03d0bb04286b&redirect_uri=https://elfsight.com/service/generate-instagram-access-token/&response_type=code&scope=public_content
