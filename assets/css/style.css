@@ -222,6 +222,9 @@ nav {
 
     width: 105%;
 
+
+    
+
 }
 
 h1 {
@@ -283,4 +286,37 @@ margin: 0 0 0 0;
 ul {
     font-size: 5vh;
 }
+.parallax-container{
+    font-family: 'Josefin Slab', serif;
+    color: white;
+}
+#angCode {
+    z-index: 15;
+    
+}
+#cities-title {
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+}
+#outdoorInfo {
+    border-color: white;
+    border: 2px;
+}
 
+#artsEntInfo {
+    z-index: 15;
+}
+.auth-image {
+    position: fixed;
+    z-index: 7;
+    height: 100px;
+    width: auto;
+}
+#atlbotgar {
+    z-index: 0;
+}
+
+.dropdown-button { 
+    margin:40px 10px 10px 50px;
+}

@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'hurtmold_regular';
+  src: url('fonts/hurtm___-webfont.woff2') format('woff2'),
+  url('fonts/hurtm___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+#hero-vid {
+  /*backface-visibility: hidden;*/
+  background-color: white;
+  background-size: cover;
+  bottom: 0;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  right: 0;
+  width: auto;
+  z-index: -1;
+}
+
+#overlay {
+  background-color:rgba(0,0,0,.60);
+  height:100%;
+  left:0;
+  position:relative;
+  top:0;
+  transition:background-color 300ms ease;
+  width:100%;
+}
+  
+  body {
+    font-family: 'hurtmold_regular';
+    /* font-family: 'Josefin Slab', serif; */
+    /* background-color:rgba(31, 31, 31, 0.45); */
+    background-color:rgba(31, 31, 31, 0.60);
+    background-image: "assets/images/nycbr.jpg";
+    color: white;
+    /* font-size: 75px; */
+  }
+
+
+  .container{
+    width: auto;
+    margin: auto;
+  }
+
+  .ch-nav-title {
+    font-size: 100px;
+    margin-left: auto;
+  }
+
+  nav {
+    color: #fff;
+    font-family:hurtmold_regular;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 6vh;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    position: fixed;
+    z-index: 5;
+    left:0;
+    background-color: rgba(0, 180, 180, 0.45);
+    padding:5px;
+
+}
+
+#navList {
+    left:40vh;
+    font-family: sans-serif;
+
+}
+
+.sidenav {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: rgba(222, 222, 222, 0.45);
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+/* #nameDisplay {
+    left: 10vh;
+    font-family: hurtmold_regular;
+} */
+
+    /* color: white;
+    background-color:rgba(31, 31, 31, 0.45);
+    padding-left: 20px;
+  } */
+
+  #cities-title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20x;
+  }
+
+  .city-info{
+    padding-top: 20px;
+
+  }
+
+  .row {
+    /* background-color:rgba(31, 31, 31, 0.60); */
+    /* justify-content:space-around; */
+    /* font-weight: bold; */
+  }
+
+  /* #outdoor-graphics {
+    float: left;
+  } */
+
+  .auth-image {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin: 10px;
+    /* margin-left: 10px; */
+  }
+
+  #outdoorInfo, #artsEntInfo, #sportsInfo, #musAndMomInfo, #zandAInfo {
+    background-color:rgba(31, 31, 31, 0.60);
+    /* background: rgb(71, 71, 71); */
+    /* margin-top: 20px; */
+  }
+
+  #outdoor-text {
+    height: 200px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  nycbackground {
+    background-image: 900px;
+    margin: 0 0 0 0;
+    z-index: -1;
+  }
