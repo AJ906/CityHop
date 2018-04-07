@@ -20,12 +20,14 @@ CityHop is an app for travelers on the go. When you want or need to plan a trip 
 
 Additionally, we've added some styling (materialize and bootstrap) to make it visually appealing and easy to navigate. We have included some snap shots of our visually appeabelow, but, to get the full effect, you should hop through the app.
 
+See it in action: 
 
 # Project Sketches
-* [Landing page](http://link.to/your/landing/page.picture)
-assets/ReadMe_Files/Project1_CityHop_EarlyDesign.png
-* [Sign in page](http://link.to/your/signin/page.picture)
-* [Data page](http://link.to/your/data/page.picture)
+* [Initial Layout](assets\ReadMe_Files\Project1_CityHop_EarlyDesign.png)
+* [Landing page](assets\ReadMe_Files\Project1_CityHop_LandingPage.png)
+* [City Scroll/Choose Your Adventure Sketch](assets\ReadMe_Files\CityScrollPageSketchandNotes.jpg)
+* [Screenshot-CityScrollPage](assets\ReadMe_Files\Project1_CityHop_CityScrollPage.png)
+* [Screenshot-CityPage](assets\ReadMe_Files\Project1_CityHop_CityPage.png)
 
 # APIs, New Tech & Some Stuff We Already Know...
 This project will use the following:
@@ -50,7 +52,7 @@ Sasi will be doing:
 * FireBase set up
 * Page(s): city.html, city.css, logic.js
 
-Tony Awesome Dev is handling:
+Tony is handling:
 * HTML/CSS design
 * Overall layout design
 * Logo Design
