@@ -87,11 +87,14 @@ nav {
     z-index: 5;
     left:0;
     background-color: rgba(0, 180, 180, 0.45);
+    padding:5px;
 
 }
 
 #navList {
-    right:10vh;
+    left:40vh;
+    font-family: sans-serif;
+
 }
 
 .sidenav {
@@ -170,7 +173,7 @@ nav {
     margin-top:0;
     border-style: dashed;
     border-width: 1px;
-    height: 50vh;
+    height: 68vh;
     /*width: 90vh;*/
     background-color: rgba(31, 31, 31, 0.4);
     color:white;
@@ -213,7 +216,7 @@ h1 {
     font-size: 6vh;
     margin: 0 0 0 0;
     font-weight: bold;
-    text-shadow: 0 0 5px #1f1f1f;
+    text-shadow: 0 0 5px #00b4b4;
     background-color: rgba(31, 31, 31, 0.5);
     height:8vh;
     padding-top: 10px;
@@ -221,10 +224,10 @@ h1 {
 }
 h2 {
     color:white;
-    font-family:sans-serif;
+    font-family:"sans-serif";
     font-weight:normal;
     font-style:normal;
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin: 0 0 20px 0;
     font-weight: bold;
     text-shadow: 0 0 5px #1f1f1f;
@@ -242,10 +245,15 @@ gramHead1 {
 
 
 .btn {
-    color:black;
-    background-color: white;
+    color: #fafafa;
+    background-color: #00b4b4;
     margin: 10px 10px 10px 10px;
     border-style: solid;
-    border-color: #00b4b4;
-    border-width: 2px;
+    border-color: #fafafa;
+    border-width: 1.5px;
 }
+
+#nameDisplay {
+left: 10vh;
+}
+

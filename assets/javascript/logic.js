@@ -68,10 +68,10 @@ $(document).on("click", ".btn", function()
                     sortBy: 'most-recent',
                     limit: 5,
                     links: false,
-                    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+                    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
                 });
                 $("#instafeed").empty();
-                $("#nameDisplay").text(city.name[i]);
+                $("#nameDisplay").text("Los Angeles, LA");
                 userFeed.run();
             }
             if(city.name[i] === "nyc"){
@@ -85,10 +85,10 @@ $(document).on("click", ".btn", function()
                     sortBy: 'most-recent',
                     limit: 5,
                     links: false,
-                    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+                    template: '<a href="{{link}}" target="_blank" ><img src="{{image}}" /></a>'
                 });
                 $("#instafeed").empty();
-                $("#nameDisplay").text(city.name[i]);
+                $("#nameDisplay").text("New York, NY");
                 userFeed1.run();
             }
             if(city.name[i] === "atl"){
@@ -102,10 +102,10 @@ $(document).on("click", ".btn", function()
                     sortBy: 'most-recent',
                     limit: 5,
                     links: false,
-                    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+                    template: '<a href="{{link}}" target="_blank" ><img src="{{image}}" /></a>'
                 });
                 $("#instafeed").empty();
-                $("#nameDisplay").text(city.name[i]);
+                $("#nameDisplay").text("Atlanta, GA");
                 userFeed2.run();
             }
             if(city.name[i] === "chg"){
@@ -119,10 +119,10 @@ $(document).on("click", ".btn", function()
                     sortBy: 'most-recent',
                     limit: 5,
                     links: false,
-                    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+                    template: '<a href="{{link}}" target="_blank" ><img src="{{image}}" /></a>'
                 });
                 $("#instafeed").empty();
-                $("#nameDisplay").text(city.name[i]);
+                $("#nameDisplay").text("Chicago, IL");
                 userFeed3.run();
             }
             if(city.name[i] === "mia"){
@@ -136,10 +136,10 @@ $(document).on("click", ".btn", function()
                     sortBy: 'most-recent',
                     limit: 5,
                     links: false,
-                    template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+                    template: '<a href="{{link}}" target="_blank" ><img src="{{image}}" /></a>'
                 });
                 $("#instafeed").empty();
-                $("#nameDisplay").text(city.name[i]);
+                $("#nameDisplay").text("Miami, FL");
                 userFeed4.run();
             }
 
